@@ -34,9 +34,9 @@
  */
 package org.tuckey.web.testhelper;
 
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpSession;
-import javax.servlet.http.HttpSessionContext;
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.http.HttpSession;
+
 import java.util.Enumeration;
 import java.util.Hashtable;
 
@@ -76,13 +76,6 @@ public class MockSession implements HttpSession {
 
     public int getMaxInactiveInterval() {
         return 0;
-    }
-
-    /**
-     * @deprecated
-     */
-    public HttpSessionContext getSessionContext() {
-        return null;
     }
 
     public Object getAttribute(String s) {
